@@ -1,0 +1,368 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\captureonetime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\captureonetime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\mainprocessimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\mainprocessimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\mainprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\mainprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\datatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\datatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\fft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\fft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\usbdask64.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\usbdask64.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\u2405.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\u2405.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\polling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\polling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\parameter.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\parameter.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\parameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\parameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\fourierdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\fourierdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\fourier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\fourier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\dsplib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\dsplib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\complexstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\complexstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\complexmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\complexmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\complexf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\complexf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\complexarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\complexarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|c:\\users\\alanh\\dropbox\\alan\\case\\20260331_adlink_u2405_v2\\reference\\dre\\dre\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7992BB68-EF88-4E4D-9040-B843ECDE0DBD}|DRE\\DRE.csproj|solutionrelative:dre\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainProcess.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\MainProcess.cs",
+              "RelativeDocumentMoniker": "DRE\\MainProcess.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\MainProcess.cs",
+              "RelativeToolTip": "DRE\\MainProcess.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwEYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:21:44.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CaptureOneTime.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\CaptureOneTime.cs",
+              "RelativeDocumentMoniker": "DRE\\CaptureOneTime.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\CaptureOneTime.cs",
+              "RelativeToolTip": "DRE\\CaptureOneTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:14:30.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "usbdask64.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\usbdask64.cs",
+              "RelativeDocumentMoniker": "DRE\\usbdask64.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\usbdask64.cs",
+              "RelativeToolTip": "DRE\\usbdask64.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:09:11.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "U2405.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\U2405.cs",
+              "RelativeDocumentMoniker": "DRE\\U2405.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\U2405.cs",
+              "RelativeToolTip": "DRE\\U2405.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:09:06.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Program.cs",
+              "RelativeDocumentMoniker": "DRE\\Program.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Program.cs",
+              "RelativeToolTip": "DRE\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:09:06.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Polling.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Polling.cs",
+              "RelativeDocumentMoniker": "DRE\\Polling.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Polling.cs",
+              "RelativeToolTip": "DRE\\Polling.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:09:05.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FFT.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\FFT.cs",
+              "RelativeDocumentMoniker": "DRE\\FFT.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\FFT.cs",
+              "RelativeToolTip": "DRE\\FFT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:05:39.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainProcessImpl.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\MainProcessImpl.cs",
+              "RelativeDocumentMoniker": "DRE\\MainProcessImpl.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\MainProcessImpl.cs",
+              "RelativeToolTip": "DRE\\MainProcessImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:08:50.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Parameter.ini",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Parameter.ini",
+              "RelativeDocumentMoniker": "DRE\\Parameter.ini",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Parameter.ini",
+              "RelativeToolTip": "DRE\\Parameter.ini",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2026-04-04T06:08:58.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Parameter.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Parameter.cs",
+              "RelativeDocumentMoniker": "DRE\\Parameter.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Parameter.cs",
+              "RelativeToolTip": "DRE\\Parameter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:08:51.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataType.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\DataType.cs",
+              "RelativeDocumentMoniker": "DRE\\DataType.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\DataType.cs",
+              "RelativeToolTip": "DRE\\DataType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:04:32.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Data.cs",
+              "RelativeDocumentMoniker": "DRE\\Data.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Data.cs",
+              "RelativeToolTip": "DRE\\Data.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:04:31.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ComplexF.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexF.cs",
+              "RelativeDocumentMoniker": "DRE\\ComplexF.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexF.cs*",
+              "RelativeToolTip": "DRE\\ComplexF.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:06:06.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ComplexMath.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexMath.cs",
+              "RelativeDocumentMoniker": "DRE\\ComplexMath.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexMath.cs",
+              "RelativeToolTip": "DRE\\ComplexMath.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:02:02.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ComplexStats.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexStats.cs",
+              "RelativeDocumentMoniker": "DRE\\ComplexStats.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexStats.cs",
+              "RelativeToolTip": "DRE\\ComplexStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:02:13.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DSPLib.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\DSPLib.cs",
+              "RelativeDocumentMoniker": "DRE\\DSPLib.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\DSPLib.cs",
+              "RelativeToolTip": "DRE\\DSPLib.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:04:33.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Fourier.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Fourier.cs",
+              "RelativeDocumentMoniker": "DRE\\Fourier.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Fourier.cs",
+              "RelativeToolTip": "DRE\\Fourier.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:05:42.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FourierDirection.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\FourierDirection.cs",
+              "RelativeDocumentMoniker": "DRE\\FourierDirection.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\FourierDirection.cs",
+              "RelativeToolTip": "DRE\\FourierDirection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:05:46.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ComplexArray.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexArray.cs",
+              "RelativeDocumentMoniker": "DRE\\ComplexArray.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\ComplexArray.cs",
+              "RelativeToolTip": "DRE\\ComplexArray.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:04:29.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Complex.cs",
+              "DocumentMoniker": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Complex.cs",
+              "RelativeDocumentMoniker": "DRE\\Complex.cs",
+              "ToolTip": "C:\\Users\\alanh\\Dropbox\\Alan\\Case\\20260331_Adlink_U2405_V2\\Reference\\DRE\\DRE\\Complex.cs*",
+              "RelativeToolTip": "DRE\\Complex.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T06:01:07.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

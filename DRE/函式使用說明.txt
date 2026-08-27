@@ -1,0 +1,41 @@
+﻿函式使用說明
+
+本程式使用CallBack function 作為資料擷取後的處理
+前提狀態
+a. 
+
+1. 執行程式後就執行 void InitialU2405()
+	內容為
+	1.1. 執行 USBDASK.UD_Device_Scan(out wModuleNum, AvailModules) <= 掃描卡片
+	1.2. 執行 USBDASK.UD_Register_Card(USBDASK.USB_2405, wSelModuleID) <= 註冊卡片
+	1.3. 執行 USBDASK.UD_DIO_2405_Config(Module_Num, USBDASK.P2405_COUNTER_INPUT, USBDASK.GPIO_IGNORE_CONFIG) <= 設定U2405 DIO功能(非必要)
+	1.4. 執行 USBDASK.UD_CTR_Control(Module_Num, 0, USBDASK.UD_CTR_Polarity_Positive | USBDASK.UD_CTR_Reset_Edge_Counter) <= 設定U2405 CTR功能(非必要)
+
+2. 執行擷取資料一次(所設定的數目) => CaptureOneTime_Start()
+	2.1. 執行 CheckNumberForU2405((uint)MyParameter.CaptureSetting.DataNumber) <= 重新設定資料存取陣列
+		內容為
+		2.1.1. 
+	2.2. 執行 SetRangeForU2405() <= 設定訊號種類
+		內容為
+	2.3. 設定 CallBack function => m_delegate = new CallbackDelegate(Callback_CaptureOneTime) <= 於第3點解說
+	2.4. 開啟執行緒 => new Thread(new ThreadStart(DoCaptureOneTimeProcedure)).Start()
+		DoCaptureOneTimeProcedure()內容為
+		2.4.1. 執行 SetChannelConfigForU2405() <= 設定Channel參數
+			函數內容
+			2.4.1.1. 設定 ushort[] chan1flag => 
+				if (MyParameter.ChannelSetting[i].IEPE == 1) chan1flag[i] |= USBDASK.P2405_AI_EnableIEPE; else chan1flag[i] |= USBDASK.P2405_AI_DisableIEPE;
+				if (MyParameter.ChannelSetting[i].InputType == 1) chan1flag[i] |= USBDASK.P2405_AI_PseudoDifferential; else chan1flag[i] |= USBDASK.P2405_AI_Differential;
+				if (MyParameter.ChannelSetting[i].CouplingType == 1) chan1flag[i] |= USBDASK.P2405_AI_Coupling_None; else chan1flag[i] |= USBDASK.P2405_AI_Coupling_AC;
+			2.4.1.2. USBDASK.UD_AI_2405_Chan_Config(Module_Num, chan1flag[0],chan1flag[1],chan1flag[2],chan1flag[3]) <= 將參數設定進U2405
+		2.4.2. 執行 USBDASK.UD_AI_2405_Trig_Config(Module_Num, USBDASK.P2405_AI_CONVSRC_INT, USBDASK.P2405_AI_TRGMOD_POST, USBDASK.P2405_AI_TRGSRC_SOFT, 0, 0, 0, 0) <= 設定Trigger功能: 本程式使用軟體觸發
+		2.4.3. 執行 USBDASK.UD_AI_AsyncDblBufferMode(Module_Num, false) <= 設定Double Buffer
+		2.4.4. 執行 USBDASK.UD_AI_EventCallBack_x64(Module_Num, 1, USBDASK.AIEnd, m_delegate) <= 設定Callback function
+		2.4.5. 執行 USBDASK.UD_AI_ContReadMultiChannels(Module_Num, 4, new ushort[] { 0, 1, 2, 3 }, GainArray, AiBuf, dwDataNum * 4, UseFrameRate, USBDASK.ASYNCH_OP) <= 開始讀取資料
+
+3. 擷取資料 CallBack function => void Callback_CaptureOneTime()
+	3.1. 執行 USBDASK.UD_AI_AsyncClear(Module_Num, out dwAccessCnt) <= 命令清除確認
+	3.2. 轉換數據
+	3.3. 執行 CheckKeyPhasor(3) <= 本程式將第四軸作為檢測RPM的判斷
+	3.4. 執行 FFT() <= 將數據做FFT轉換
+
+
