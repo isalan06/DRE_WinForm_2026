@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alanhuang/Library/CloudStorage/Dropbox/Alan/Case/20260331_Adlink_U2405_V2/Program/DRE_V2_1/DRE/DRE.csproj": {}
+  },
+  "projects": {
+    "/Users/alanhuang/Library/CloudStorage/Dropbox/Alan/Case/20260331_Adlink_U2405_V2/Program/DRE_V2_1/DRE/DRE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alanhuang/Library/CloudStorage/Dropbox/Alan/Case/20260331_Adlink_U2405_V2/Program/DRE_V2_1/DRE/DRE.csproj",
+        "projectName": "DRE",
+        "projectPath": "/Users/alanhuang/Library/CloudStorage/Dropbox/Alan/Case/20260331_Adlink_U2405_V2/Program/DRE_V2_1/DRE/DRE.csproj",
+        "packagesPath": "/Users/alanhuang/.nuget/packages/",
+        "outputPath": "/Users/alanhuang/Library/CloudStorage/Dropbox/Alan/Case/20260331_Adlink_U2405_V2/Program/DRE_V2_1/DRE/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/alanhuang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[5.1.58, )"
+            },
+            "ScottPlot.WinForms": {
+              "target": "Package",
+              "version": "[5.1.58, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
