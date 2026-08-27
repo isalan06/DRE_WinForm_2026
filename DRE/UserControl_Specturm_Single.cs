@@ -34,7 +34,7 @@ namespace DRE
             panel1.Controls.Clear();
             panel1.Controls.Add(formsPlot1);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.TimeBase, true);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.Spectrum, true);
         }
 
         private double[] GetMagnitudeData(
@@ -370,12 +370,19 @@ namespace DRE
             // 圖表標題
             // =============================================
 
-            plot.Title("Magnitude");
-            plot.XLabel("Frequency(Hz)");
+            //plot.Title("Magnitude");
+            //plot.XLabel("Frequency(Hz)");
+            //plot.YLabel(
+            //    isMagLog
+            //        ? "Mag Log"
+            //        : "Mag");
+
+            plot.Title($"{ScottPlotTitleConfig.Spectrum.Title}");
+            plot.XLabel($"{ScottPlotTitleConfig.Spectrum.XAxisTitle}");
             plot.YLabel(
                 isMagLog
                     ? "Mag Log"
-                    : "Mag");
+                    : $"{ScottPlotTitleConfig.Spectrum.YAxisTitle}");
 
             bool[] setChannelDisplay =
             {
