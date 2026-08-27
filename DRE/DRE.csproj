@@ -283,10 +283,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ScottPlot">
-      <Version>5.1.58</Version>
+      <Version>5.1.59</Version>
     </PackageReference>
     <PackageReference Include="ScottPlot.WinForms">
-      <Version>5.1.58</Version>
+      <Version>5.1.59</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

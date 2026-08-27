@@ -41,8 +41,8 @@ namespace DRE
 
             panel2.Controls.Add(formsPlot2);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot2);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.TimeBase, true);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot2, ScottPlotTitleConfig.TimeBase, true);
         }
 
         private void DrawData()
@@ -153,9 +153,13 @@ namespace DRE
             // 圖表標題與座標軸名稱
             // =========================================
 
-            plot.Title("Data");
-            plot.XLabel("Time(ms)");
-            plot.YLabel("Voltage(V)");
+            //plot.Title("Data");
+            //plot.XLabel("Time(ms)");
+            //plot.YLabel("Voltage(V)");
+
+            plot.Title($"{ScottPlotTitleConfig.TimeBase.Title}");
+            plot.XLabel($"{ScottPlotTitleConfig.TimeBase.XAxisTitle}");
+            plot.YLabel($"{ScottPlotTitleConfig.TimeBase.YAxisTitle}");
 
             // =========================================
             // 繪製四個 Channel

@@ -39,8 +39,8 @@ namespace DRE
 
             panel2.Controls.Add(formsPlot2);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot2);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.Spectrum, true);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot2, ScottPlotTitleConfig.Spectrum, true);
         }
         /*
         private void DrawData()
@@ -214,9 +214,13 @@ namespace DRE
             // 圖表標題
             // ==========================================
 
-            plot.Title("Magnitude");
-            plot.XLabel("Frequency (Hz)");
-            plot.YLabel("Magnitude");
+            //plot.Title("Magnitude");
+            //plot.XLabel("Frequency (Hz)");
+            //plot.YLabel("Magnitude");
+
+            plot.Title($"{ScottPlotTitleConfig.Spectrum.Title}");
+            plot.XLabel($"{ScottPlotTitleConfig.Spectrum.XAxisTitle}");
+            plot.YLabel($"{ScottPlotTitleConfig.Spectrum.YAxisTitle}");
 
             bool hasCurve = false;
 

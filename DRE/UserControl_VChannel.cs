@@ -42,7 +42,7 @@ namespace DRE
             panel1.Controls.Clear();
             panel1.Controls.Add(formsPlot1);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.VChannel, true);
         }
 
         private void DrawData()
@@ -75,12 +75,12 @@ namespace DRE
             zedGraphControl1.GraphPane.CurveList.Clear();
 
             GraphPane myPane = zedGraphControl1.GraphPane;
-            myPane.Title.Text = "Voltage - Channel";
+            myPane.Title.Text = $"{ScottPlotTitleConfig.VChannel.Title}";//"Voltage - Channel";
             myPane.YAxis.Scale.Max = YAxisMax;
             myPane.YAxis.Scale.Min = YAxisMin;
-            myPane.YAxis.Title.Text = "Voltage(V)";
+            myPane.YAxis.Title.Text = $"{ScottPlotTitleConfig.VChannel.YAxisTitle}";//"Voltage(V)";
 
-            myPane.XAxis.Title.Text = "Axis No";
+            myPane.XAxis.Title.Text = $"{ScottPlotTitleConfig.VChannel.XAxisTitle}";//"Axis No";
 
             for (int i = 0; i < 4; i++)
             {
@@ -105,9 +105,13 @@ namespace DRE
 
             plot.Clear();
 
-            plot.Title("Voltage - Channel");
-            plot.XLabel("Axis No");
-            plot.YLabel("Voltage(V)");
+            //plot.Title("Voltage - Channel");
+            //plot.XLabel("Axis No");
+            //plot.YLabel("Voltage(V)");
+
+            plot.Title($"{ScottPlotTitleConfig.VChannel.Title}");
+            plot.XLabel($"{ScottPlotTitleConfig.VChannel.XAxisTitle}");
+            plot.YLabel($"{ScottPlotTitleConfig.VChannel.YAxisTitle}");
 
             if (values == null || values.Length < 4)
             {

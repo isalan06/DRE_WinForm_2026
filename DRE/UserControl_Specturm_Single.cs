@@ -34,7 +34,7 @@ namespace DRE
             panel1.Controls.Clear();
             panel1.Controls.Add(formsPlot1);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.TimeBase, true);
         }
 
         private double[] GetMagnitudeData(

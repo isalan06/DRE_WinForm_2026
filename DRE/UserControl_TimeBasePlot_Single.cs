@@ -33,7 +33,7 @@ namespace DRE
 
             panel1.Controls.Add(formsPlot1);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.TimeBase, true);
         }
 
         private void DrawData()
@@ -84,10 +84,16 @@ namespace DRE
             }
 
             // 圖表標題及座標軸
-            plot.Title("Data");
-            plot.XLabel("Time(ms)");
+            //plot.Title("Data");
+            //plot.XLabel("Time(ms)");
 
-            plot.Axes.Left.Label.Text = "Voltage(V)";
+            //plot.Axes.Left.Label.Text = "Voltage(V)";
+            //plot.Axes.Right.Label.Text = "Unit(mil)";
+
+            plot.Title($"{ScottPlotTitleConfig.TimeBase.Title}");
+            plot.XLabel($"{ScottPlotTitleConfig.TimeBase.XAxisTitle}");
+
+            plot.Axes.Left.Label.Text = $"{ScottPlotTitleConfig.TimeBase.YAxisTitle}";
             plot.Axes.Right.Label.Text = "Unit(mil)";
 
             bool displayParameter = cbxDisplayParameterUsed.Checked;

@@ -38,7 +38,7 @@ namespace DRE
             panel1.Controls.Clear();
             panel1.Controls.Add(formsPlot1);
 
-            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1);
+            ScottPlotThemeMenuHelper.AddThemeMenu(formsPlot1, ScottPlotTitleConfig.Orbit, true);
         }
         
         private void DrawData()
@@ -218,7 +218,8 @@ namespace DRE
             // 標題與座標軸
             // ==========================================
 
-            plot.Title("Orbit");
+            //plot.Title("Orbit");
+            plot.Title($"{ScottPlotTitleConfig.Orbit.Title}");
 
             plot.XLabel(
                 $"Channel {xIndex + 1}");
