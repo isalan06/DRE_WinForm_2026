@@ -41,6 +41,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rbnAmplitude = new System.Windows.Forms.RadioButton();
+            this.rbnMag = new System.Windows.Forms.RadioButton();
             this.panOP1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,8 @@
             // 
             this.panOP1.BackColor = System.Drawing.Color.PaleGreen;
             this.panOP1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panOP1.Controls.Add(this.rbnAmplitude);
+            this.panOP1.Controls.Add(this.rbnMag);
             this.panOP1.Controls.Add(this.chbChann4Displat2);
             this.panOP1.Controls.Add(this.chbChann3Displat2);
             this.panOP1.Controls.Add(this.chbChann2Displat2);
@@ -175,6 +179,29 @@
             this.panel2.Size = new System.Drawing.Size(1575, 290);
             this.panel2.TabIndex = 9;
             // 
+            // rbnAmplitude
+            // 
+            this.rbnAmplitude.AutoSize = true;
+            this.rbnAmplitude.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.rbnAmplitude.Location = new System.Drawing.Point(663, 41);
+            this.rbnAmplitude.Name = "rbnAmplitude";
+            this.rbnAmplitude.Size = new System.Drawing.Size(85, 21);
+            this.rbnAmplitude.TabIndex = 12;
+            this.rbnAmplitude.Text = "Amplitude";
+            this.rbnAmplitude.UseVisualStyleBackColor = true;
+            // 
+            // rbnMag
+            // 
+            this.rbnMag.AutoSize = true;
+            this.rbnMag.Checked = true;
+            this.rbnMag.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.rbnMag.Location = new System.Drawing.Point(541, 41);
+            this.rbnMag.Name = "rbnMag";
+            this.rbnMag.Size = new System.Drawing.Size(89, 21);
+            this.rbnMag.TabIndex = 11;
+            this.rbnMag.Text = "Magnitude";
+            this.rbnMag.UseVisualStyleBackColor = true;
+            // 
             // UserControl_Specturm_Two
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -204,5 +231,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton rbnAmplitude;
+        private System.Windows.Forms.RadioButton rbnMag;
     }
 }

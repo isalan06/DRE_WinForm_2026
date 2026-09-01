@@ -58,6 +58,8 @@ namespace DRE
         {
             bool result = false;
 
+            LoadedRPM = -1.0;
+
             if (!IsExecutingProcedure) // 確認是否執行流程中，確認在未執行流程狀態下可以進行一次擷取流程啟動
             {
                 if (bRegisterFlag) // 確認是否有讀取到U2405設備，請參考 function: InitialU2405()
@@ -118,6 +120,8 @@ namespace DRE
         public bool CaptureOneTime_Sim_Start(bool isUseSetRPM = false, double setRPM = 100.0)
         {
             bool result = false;
+
+            LoadedRPM = -1.0;
 
             if (!IsExecutingProcedure)
             {

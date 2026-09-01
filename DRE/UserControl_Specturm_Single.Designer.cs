@@ -41,6 +41,8 @@
             this.chbChann1Displat1 = new System.Windows.Forms.CheckBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbnMag = new System.Windows.Forms.RadioButton();
+            this.rbnAmplitude = new System.Windows.Forms.RadioButton();
             this.panOP1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbrEnvelopeNumberBar)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +51,8 @@
             // 
             this.panOP1.BackColor = System.Drawing.Color.PaleGreen;
             this.panOP1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panOP1.Controls.Add(this.rbnAmplitude);
+            this.panOP1.Controls.Add(this.rbnMag);
             this.panOP1.Controls.Add(this.cbxMagLog);
             this.panOP1.Controls.Add(this.cbxShiftHalf);
             this.panOP1.Controls.Add(this.tbrEnvelopeNumberBar);
@@ -179,6 +183,30 @@
             this.panel1.Size = new System.Drawing.Size(1575, 592);
             this.panel1.TabIndex = 4;
             // 
+            // rbnMag
+            // 
+            this.rbnMag.AutoSize = true;
+            this.rbnMag.Checked = true;
+            this.rbnMag.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.rbnMag.Location = new System.Drawing.Point(946, 46);
+            this.rbnMag.Name = "rbnMag";
+            this.rbnMag.Size = new System.Drawing.Size(89, 21);
+            this.rbnMag.TabIndex = 9;
+            this.rbnMag.Text = "Magnitude";
+            this.rbnMag.UseVisualStyleBackColor = true;
+            // 
+            // rbnAmplitude
+            // 
+            this.rbnAmplitude.AutoSize = true;
+            this.rbnAmplitude.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.rbnAmplitude.Location = new System.Drawing.Point(1068, 46);
+            this.rbnAmplitude.Name = "rbnAmplitude";
+            this.rbnAmplitude.Size = new System.Drawing.Size(85, 21);
+            this.rbnAmplitude.TabIndex = 10;
+            this.rbnAmplitude.Text = "Amplitude";
+            this.rbnAmplitude.UseVisualStyleBackColor = true;
+            this.rbnAmplitude.CheckedChanged += new System.EventHandler(this.rbnAmplitude_CheckedChanged);
+            // 
             // UserControl_Specturm_Single
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -209,5 +237,7 @@
         private System.Windows.Forms.CheckBox cbxShiftHalf;
         private System.Windows.Forms.CheckBox cbxMagLog;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rbnAmplitude;
+        private System.Windows.Forms.RadioButton rbnMag;
     }
 }

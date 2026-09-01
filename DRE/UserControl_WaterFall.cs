@@ -83,8 +83,9 @@ namespace DRE
             formsPlot1.Plot.XLabel("Frequency (Hz)");
             formsPlot1.Plot.YLabel("Magnitude");
 
-            // 對應原本 ZedGraph 的 YAxis.IsVisible = false
-            formsPlot1.Plot.Axes.Left.IsVisible = false;
+            formsPlot1.Plot.Axes.Left.IsVisible = true;
+            formsPlot1.Plot.Axes.Left.Label.IsVisible = false;
+            formsPlot1.Plot.Axes.Left.TickLabelStyle.IsVisible = false;
 
             double lastValue = 0.0;
             int axisIndex = 0;
@@ -268,9 +269,9 @@ namespace DRE
                 ScottPlotTitleConfig.WaterFall);
 
 
-            // 對應原本：
-            // myPane2.YAxis.IsVisible = false;
-            plot.Axes.Left.IsVisible = false;
+            plot.Axes.Left.IsVisible = true;
+            plot.Axes.Left.Label.IsVisible = false;
+            plot.Axes.Left.TickLabelStyle.IsVisible = false;
 
             // 新增一條 Waterfall 曲線
             ScottPlot.Plottables.Scatter scatter =

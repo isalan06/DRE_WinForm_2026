@@ -40,6 +40,7 @@
             this.lblPageTimeBasePlot = new System.Windows.Forms.Label();
             this.lblPageConfig = new System.Windows.Forms.Label();
             this.panOp = new System.Windows.Forms.Panel();
+            this.lblConnect = new System.Windows.Forms.Label();
             this.lblWaterFall3D = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
-            this.lblConnect = new System.Windows.Forms.Label();
             this.panMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panOp.SuspendLayout();
@@ -226,6 +226,20 @@
             this.panOp.Size = new System.Drawing.Size(1600, 154);
             this.panOp.TabIndex = 0;
             // 
+            // lblConnect
+            // 
+            this.lblConnect.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblConnect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblConnect.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblConnect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblConnect.Location = new System.Drawing.Point(174, 66);
+            this.lblConnect.Name = "lblConnect";
+            this.lblConnect.Size = new System.Drawing.Size(150, 50);
+            this.lblConnect.TabIndex = 24;
+            this.lblConnect.Text = "Connect";
+            this.lblConnect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblConnect.Click += new System.EventHandler(this.lblConnect_Click);
+            // 
             // lblWaterFall3D
             // 
             this.lblWaterFall3D.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -237,6 +251,7 @@
             this.lblWaterFall3D.TabIndex = 23;
             this.lblWaterFall3D.Text = "Show 3D";
             this.lblWaterFall3D.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWaterFall3D.Visible = false;
             this.lblWaterFall3D.Click += new System.EventHandler(this.lblWaterFall3D_Click);
             // 
             // button2
@@ -480,20 +495,6 @@
             // 
             this.openFileDialog3.FileName = "openFileDialog3";
             this.openFileDialog3.Filter = "CSV File|*.csv";
-            // 
-            // lblConnect
-            // 
-            this.lblConnect.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblConnect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblConnect.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblConnect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblConnect.Location = new System.Drawing.Point(174, 66);
-            this.lblConnect.Name = "lblConnect";
-            this.lblConnect.Size = new System.Drawing.Size(150, 50);
-            this.lblConnect.TabIndex = 24;
-            this.lblConnect.Text = "Connect";
-            this.lblConnect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblConnect.Click += new System.EventHandler(this.lblConnect_Click);
             // 
             // MainForm
             // 

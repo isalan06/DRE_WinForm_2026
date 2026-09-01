@@ -147,6 +147,9 @@ namespace DRE
         {
             get
             {
+                if (LoadedRPM >= 0.0)
+                    return LoadedRPM;
+
                 double result = 0.0;
 
                 if (keyphasorBuffer.Count > 2)
@@ -165,6 +168,7 @@ namespace DRE
                 return result;
             }
         }
+        public double LoadedRPM { get; set; } = -1.0;
         public double SetSimRPM { get; set; }
         public bool IsSetSimRPM { get; set; }
 

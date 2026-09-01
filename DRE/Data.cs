@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
+using System.Globalization;
 
 namespace DRE
 {
@@ -100,6 +101,8 @@ namespace DRE
                     sw.WriteLine(title);
                     string rpm = "@ProgramName=" + this.MyParameter.CaptureSetting.ProgramName;
                     sw.WriteLine(rpm);
+                    double savedRPM = IsSetSimRPM ? SetSimRPM : -1.0;
+                    sw.WriteLine("@RPM=" + savedRPM.ToString("R", CultureInfo.InvariantCulture));
                     string framerate = "@Framerate=" + this.MyParameter.CaptureSetting.SamplingRateIndex.ToString();
                     sw.WriteLine(framerate);
                     string rangeindex = "@RangeIndex=" + this.MyParameter.ScopeSetting.RangeIndex.ToString();
@@ -161,6 +164,7 @@ namespace DRE
             List<string> data = new List<string>();
             List<string> data2 = new List<string>();
             List<string> data3 = new List<string>();
+            double loadedRPM = -1.0;
 
             using (FileStream fs = new FileStream(filenamepath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
@@ -195,6 +199,12 @@ namespace DRE
                                         case "Title": break;
 
                                         case "ProgramName": try { this.MyParameter.CaptureSetting.ProgramName = data_value; } catch { this.MyParameter.CaptureSetting.ProgramName = "NA"; } break;
+
+                                        case "RPM":
+                                            double parsedRPM;
+                                            if (double.TryParse(data_value, NumberStyles.Float, CultureInfo.InvariantCulture, out parsedRPM) && parsedRPM >= 0.0)
+                                                loadedRPM = parsedRPM;
+                                            break;
 
                                         case "Framerate": try { this.MyParameter.CaptureSetting.SamplingRateIndex = Convert.ToInt32(data_value); } catch { this.MyParameter.CaptureSetting.SamplingRateIndex = 1; } finally { UseFrameRate = this.MyParameter.CaptureSetting.SamplingRate; } break;
 
@@ -276,6 +286,7 @@ namespace DRE
                 
                 this.KeyPhasorList = keyphasorbuffer;
                 this.KeyPhasorEndList = keyphasorendbuffer;
+                this.LoadedRPM = loadedRPM;
 
                 FFT();
             }

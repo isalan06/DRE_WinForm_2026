@@ -65,6 +65,20 @@ namespace DRE
             return mp.magResult[channel];
         }
 
+        private double[] GetAmplitudeData(
+            int channel)
+        {
+            if (mp.amplitudeResult == null ||
+                channel < 0 ||
+                channel >= mp.amplitudeResult.Length ||
+                mp.amplitudeResult[channel] == null)
+            {
+                return Array.Empty<double>();
+            }
+
+            return mp.amplitudeResult[channel];
+        }
+
         private double[] GetFrequencyData(
             int channel,
             bool isMagLog,
@@ -380,9 +394,12 @@ namespace DRE
             plot.Title($"{ScottPlotTitleConfig.Spectrum.Title}");
             plot.XLabel($"{ScottPlotTitleConfig.Spectrum.XAxisTitle}");
             plot.YLabel(
-                isMagLog
+                rbnAmplitude.Checked
+                    ? "Amp"
+                    :
+                (isMagLog
                     ? "Mag Log"
-                    : $"{ScottPlotTitleConfig.Spectrum.YAxisTitle}");
+                    : $"{ScottPlotTitleConfig.Spectrum.YAxisTitle}"));
 
             bool[] setChannelDisplay =
             {
@@ -409,6 +426,12 @@ namespace DRE
                     GetMagnitudeData(
                         channel,
                         isMagLog);
+
+                if (rbnAmplitude.Checked)
+                {
+                    sourceMagnitude =
+                        GetAmplitudeData(channel);
+                }
 
                 if (sourceMagnitude == null ||
                     sourceMagnitude.Length == 0)
@@ -482,6 +505,10 @@ namespace DRE
                 scatter.LegendText =
                     $"Magnitude-{channel + 1}";
 
+                if(rbnAmplitude.Checked)
+                    scatter.LegendText =
+                    $"Amplitude-{channel + 1}";
+
                 scatter.LineWidth = 2.0f;
                 scatter.MarkerSize = 0;
 
@@ -541,6 +568,14 @@ namespace DRE
         private void tbrEnvelopeNumberBar_Scroll(object sender, EventArgs e)
         {
             lblEnvelopePerNumber.Text = tbrEnvelopeNumberBar.Value.ToString();
+        }
+
+        private void rbnAmplitude_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbnAmplitude.Checked)
+            {
+                cbxMagLog.Checked = false;
+            }
         }
     }
 }

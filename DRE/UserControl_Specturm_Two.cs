@@ -220,7 +220,10 @@ namespace DRE
 
             plot.Title($"{ScottPlotTitleConfig.Spectrum.Title}");
             plot.XLabel($"{ScottPlotTitleConfig.Spectrum.XAxisTitle}");
-            plot.YLabel($"{ScottPlotTitleConfig.Spectrum.YAxisTitle}");
+            if (rbnAmplitude.Checked)
+                plot.YLabel("Amp");
+            else
+                plot.YLabel($"{ScottPlotTitleConfig.Spectrum.YAxisTitle}");
 
             bool hasCurve = false;
 
@@ -248,6 +251,8 @@ namespace DRE
 
                 double[] magnitude =
                     mp.magResult[channel];
+                if (rbnAmplitude.Checked)
+                    magnitude = mp.amplitudeResult[channel];
 
                 /*
                  * Signal 適用於固定間距的 X 軸資料。
@@ -270,6 +275,10 @@ namespace DRE
 
                 signal.LegendText =
                     $"Magnitude-{channel + 1}";
+
+                if (rbnAmplitude.Checked)
+                    signal.LegendText =
+                    $"Amplitude-{channel + 1}";
 
                 signal.LineWidth = 2.0f;
 
