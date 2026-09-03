@@ -33,9 +33,16 @@ namespace DRE
                 fft.Initialize((uint)VoltageValue[i].Length, dwZeroPadding);
                 //fft.Initialize((uint)VoltageValue[i].Length);
 
-                cpxResult = fft.Execute(VoltageValue[i]);
+                // 加窗以降低訊號頻率未對齊 FFT bin 造成的振幅低估 (scalloping loss)
+                double[] windowCoefficients = DSP.Window.Coefficients(DSP.Window.Type.Hann, (uint)VoltageValue[i].Length); // modify
+                double windowScaleFactor = DSP.Window.ScaleFactor.Signal(windowCoefficients); // modify
+                double[] windowedVoltage = DSP.Math.Multiply(VoltageValue[i], windowCoefficients); // modify
+
+                cpxResult = fft.Execute(windowedVoltage); // modify
+                //cpxResult = fft.Execute(VoltageValue[i]);
 
                 magResult[i] = DSP.ConvertComplex.ToMagnitude(cpxResult);
+                magResult[i] = DSP.Math.Multiply(magResult[i], windowScaleFactor); // modify
                 amplitudeResult[i] = new double[magResult[i].Length];
 
                 for (int bin = 0; bin < magResult[i].Length; bin++)
