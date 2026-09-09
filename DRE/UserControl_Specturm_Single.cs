@@ -540,21 +540,33 @@ namespace DRE
             // 座標範圍
             // =============================================
 
-            if (preserveZoom && !mp.IsExecutingProcedure)
-            {
-                /*
-                 * 保留使用者目前的縮放與平移範圍。
-                 */
-                plot.Axes.SetLimits(previousLimits);
-            }
-            else
-            {
-                /*
-                 * 第一次繪圖，自動顯示全部資料。
-                 */
-                plot.Axes.AutoScale();
+            //if (preserveZoom && !mp.IsExecutingProcedure && !mp.IsLoadFinished)
+            //{
+            //    /*
+            //     * 保留使用者目前的縮放與平移範圍。
+            //     */
+            //    plot.Axes.SetLimits(previousLimits);
+            //}
+            //else
+            //{
+            //    /*
+            //     * 第一次繪圖，自動顯示全部資料。
+            //     */
+            //    plot.Axes.AutoScale();
 
-                _magnitudePlotInitialized = true;
+            //    _magnitudePlotInitialized = true;
+
+            //    mp.IsLoadFinished = false;
+            //}
+
+            if (mp.IsExecutingProcedure || mp.bCaptureOneTimeFinished || mp.IsLoadFinished2 || mp.IsCaptureOneTimeSimFinished2)
+            {
+
+                if (mp.IsLoadFinished2) mp.IsLoadFinished2 = false;
+                if (mp.bCaptureOneTimeFinished) mp.bCaptureOneTimeFinished = false;
+                if (mp.IsCaptureOneTimeSimFinished2) mp.IsCaptureOneTimeSimFinished2 = false;
+                // 先自動計算 Y 軸範圍
+                plot.Axes.AutoScale();
             }
 
             formsPlot1.Refresh();

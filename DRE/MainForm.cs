@@ -165,6 +165,9 @@ namespace DRE
 
             // 開始執行虛擬一次資料流程
             mp.CaptureOneTime_Sim_Start(isUseSetRPM, setRPM);
+
+            mp.IsCaptureOneTimeSimFinished = true;
+            mp.IsCaptureOneTimeSimFinished2 = true;
         }
 
         private void lblPageSpecturm_Click(object sender, EventArgs e)
@@ -192,6 +195,9 @@ namespace DRE
                 mp.LoadDataWithInfo(openFileDialog1.FileName);
 
                 userControl_Config.DisplayRefresh();
+
+                mp.IsLoadFinished = true;
+                mp.IsLoadFinished2 = true;
             }
         }
 
@@ -355,6 +361,11 @@ namespace DRE
             MessageBox.Show(
                 message,
                 title);
+        }
+
+        private void cbxMultiDataList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

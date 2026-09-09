@@ -308,6 +308,7 @@
             this.lblWaterFallTrigger.TabIndex = 18;
             this.lblWaterFallTrigger.Text = "Calculate WaterFall";
             this.lblWaterFallTrigger.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWaterFallTrigger.Visible = false;
             this.lblWaterFallTrigger.Click += new System.EventHandler(this.lblWaterFallTrigger_Click);
             // 
             // lblMultiDataGet
@@ -321,6 +322,7 @@
             this.lblMultiDataGet.TabIndex = 17;
             this.lblMultiDataGet.Text = "Get";
             this.lblMultiDataGet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMultiDataGet.Visible = false;
             this.lblMultiDataGet.Click += new System.EventHandler(this.lblMultiDataGet_Click);
             // 
             // cbxMultiDataList
@@ -332,6 +334,8 @@
             this.cbxMultiDataList.Name = "cbxMultiDataList";
             this.cbxMultiDataList.Size = new System.Drawing.Size(177, 33);
             this.cbxMultiDataList.TabIndex = 16;
+            this.cbxMultiDataList.Visible = false;
+            this.cbxMultiDataList.SelectedIndexChanged += new System.EventHandler(this.cbxMultiDataList_SelectedIndexChanged);
             // 
             // btnLoadMultiData
             // 
@@ -344,6 +348,7 @@
             this.btnLoadMultiData.TabIndex = 15;
             this.btnLoadMultiData.Text = "Load Multi-Data";
             this.btnLoadMultiData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLoadMultiData.Visible = false;
             this.btnLoadMultiData.Click += new System.EventHandler(this.btnLoadMultiData_Click);
             // 
             // chbRefreshStop

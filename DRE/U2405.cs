@@ -38,6 +38,11 @@ namespace DRE
         public bool IsCaptureOneTimeStatus { get { return (ExecutingProgramName == "CaptureOneTime"); } }
         public bool IsCaptureOneTimeSimStatus { get { return (ExecutingProgramName == "CaptureOneTime_Sim"); } }
 
+        public bool IsLoadFinished = false;
+        public bool IsLoadFinished2 = false;
+        public bool IsCaptureOneTimeSimFinished = false;
+        public bool IsCaptureOneTimeSimFinished2 = false;
+
         uint dwDataNum = 1024;
         public uint DataNumber { get { return dwDataNum; } }
         uint dwZeroPadding = 0;

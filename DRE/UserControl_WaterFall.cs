@@ -302,7 +302,33 @@ namespace DRE
             return result;
         }
 
-        
+        private void btnLoadMultiData_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                cbxMultiDataList.Items.Clear();
+
+                string[] filename = openFileDialog2.FileNames;
+                mp.MultiFileNamePaths = filename;
+
+
+                if (mp.MultiFileNamePaths != null)
+                {
+                    cbxMultiDataList.Items.AddRange(mp.MultiFileNames);
+                    cbxMultiDataList.SelectedIndex = 0;
+                }
+            }
+        }
+
+        private void lblWaterFallTrigger_Click(object sender, EventArgs e)
+        {
+            if (cbxMultiDataList.Items.Count > 1)
+            {
+                this.CreateWaterFall();
+            }
+            else
+                MessageBox.Show("至少匯入兩筆資料");
+        }
     }
 }
 

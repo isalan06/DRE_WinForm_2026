@@ -227,9 +227,11 @@ namespace DRE
 
             plot.ShowLegend();
 
-            if (mp.IsExecutingProcedure || mp.bCaptureOneTimeFinished)
+            if (mp.IsExecutingProcedure || mp.bCaptureOneTimeFinished || mp.IsLoadFinished || mp.IsCaptureOneTimeSimFinished)
             {
+                if (mp.IsLoadFinished) mp.IsLoadFinished = false;
                 if (mp.bCaptureOneTimeFinished) mp.bCaptureOneTimeFinished = false;
+                if (mp.IsCaptureOneTimeSimFinished) mp.IsCaptureOneTimeSimFinished = false;
                 // 先自動計算 Y 軸範圍
                 plot.Axes.AutoScale();
 
