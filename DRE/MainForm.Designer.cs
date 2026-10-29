@@ -485,7 +485,7 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.DefaultExt = "*.dat";
-            this.saveFileDialog1.Filter = "Data File|*.dat|All File|*.*";
+            this.saveFileDialog1.Filter = "Data File|*.dat|CSV File|*.csv|All File|*.*";
             this.saveFileDialog1.InitialDirectory = "C:\\";
             // 
             // openFileDialog2

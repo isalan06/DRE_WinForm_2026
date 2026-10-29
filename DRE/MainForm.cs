@@ -182,7 +182,10 @@ namespace DRE
 
                 string ext = Path.GetExtension(saveFileDialog1.FileName);
 
-                mp.SaveDataWithInfo(saveFileDialog1.FileName);
+                if (saveFileDialog1.FilterIndex == 2)
+                    mp.SaveCSVDataWithInfo(saveFileDialog1.FileName);
+                else
+                    mp.SaveDataWithInfo(saveFileDialog1.FileName);
             }
         }
 

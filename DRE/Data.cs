@@ -159,6 +159,62 @@ namespace DRE
             }
         }
 
+        public void SaveCSVDataWithInfo(string filenamepath)
+        {
+            if (VoltageValue == null) return;
+            if (VoltageValue.Length <= 0) return;
+
+            using (FileStream fs = new FileStream(filenamepath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    string title = "NO,INFO,CH1,CH2,CH3,CH4,KeyPhasorData,KeyPhasorEndData";
+                    sw.WriteLine(title);
+                    int _no = 1;
+
+                    for (int j = 0; j < this.MyParameter.CaptureSetting.DataNumber; j++)
+                    {
+                        int _index = _no - 1;
+                        string data = _no.ToString() + ",";
+                        if (_no == 1) data += "@Title=Voltage Data With Information";
+                        else if (_no == 2) data += $"@ProgramName={this.MyParameter.CaptureSetting.ProgramName}";
+                        else if (_no == 3) { double savedRPM = IsSetSimRPM ? SetSimRPM : -1.0; data += $"@RPM={savedRPM.ToString("R", CultureInfo.InvariantCulture)}"; }
+                        else if (_no == 4) data += $"@Framerate={this.MyParameter.CaptureSetting.SamplingRateIndex.ToString()}";
+                        else if (_no == 5) data += $"@RangeIndex={this.MyParameter.ScopeSetting.RangeIndex.ToString()}";
+                        else if (_no == 6) data += $"@Count={this.MyParameter.CaptureSetting.DataNumber.ToString()}";
+                        else if (_no == 7) data += $"@SpecificationIndex1={this.MyParameter.ChannelSetting[0].DisplaySpecification.ToString()}";
+                        else if (_no == 8) data += $"@SpecificationName1={this.MyParameter.ChannelSetting[0].DisplaySpecificationName}";
+                        else if (_no == 9) data += $"@TypeIndex1={this.MyParameter.ChannelSetting[0].DisplayType.ToString()}";
+                        else if (_no == 10) data += $"@SpecificationIndex1={this.MyParameter.ChannelSetting[1].DisplaySpecification.ToString()}";
+                        else if (_no == 11) data += $"@SpecificationName1={this.MyParameter.ChannelSetting[1].DisplaySpecificationName}";
+                        else if (_no == 12) data += $"@TypeIndex1={this.MyParameter.ChannelSetting[1].DisplayType.ToString()}";
+                        else if (_no == 13) data += $"@SpecificationIndex1={this.MyParameter.ChannelSetting[2].DisplaySpecification.ToString()}";
+                        else if (_no == 14) data += $"@SpecificationName1={this.MyParameter.ChannelSetting[2].DisplaySpecificationName}";
+                        else if (_no == 15) data += $"@TypeIndex1={this.MyParameter.ChannelSetting[2].DisplayType.ToString()}";
+                        else if (_no == 16) data += $"@SpecificationIndex1={this.MyParameter.ChannelSetting[3].DisplaySpecification.ToString()}";
+                        else if (_no == 17) data += $"@SpecificationName1={this.MyParameter.ChannelSetting[3].DisplaySpecificationName}";
+                        else if (_no == 18) data += $"@TypeIndex1={this.MyParameter.ChannelSetting[3].DisplayType.ToString()}";
+                        else if (_no == 19) data += $"@KeyPhasorNumber={this.KeyPhasorList.Length.ToString()}";
+                        else if (_no == 20) data += $"@KeyPhasorEndNumber={this.KeyPhasorEndList.Length.ToString()}";
+                        else data += "";
+
+                        data += ",";
+                        data += $"{VoltageValue[0][_index].ToString("F8")},{VoltageValue[1][_index].ToString("F8")},{VoltageValue[2][_index].ToString("F8")},{VoltageValue[3][_index].ToString("F8")},";
+
+                        if (_index < KeyPhasorList.Length) data += $"{KeyPhasorList[_index].ToString()},"; else data += ",";
+                        if (_index < KeyPhasorEndList.Length) data += KeyPhasorEndList[_index].ToString();
+
+                        sw.WriteLine(data);
+                        _no++;
+                    }
+
+                    sw.Flush();
+                }
+
+                fs.Close();
+            }
+        }
+
         public void LoadDataWithInfo(string filenamepath)
         {
             List<string> data = new List<string>();
